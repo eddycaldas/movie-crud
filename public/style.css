@@ -1,0 +1,31 @@
+body {
+  background-color: gray;
+}
+
+header {
+  background-color: black;
+}
+button {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  width: 200px;
+  height: 60px;
+}
+
+img {
+  width: 70%;
+  height: 620px;
+  padding-left: 15%;
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
