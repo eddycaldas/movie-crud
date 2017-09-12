@@ -1,12 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors')
 
 app.use(bodyParser.urlencoded({ extended: false }));
  
 app.use(bodyParser.json());
 
 app.use(express.static('public'))
+
+app.use(cors())
 
 const movie = require('./routes/movie');
 

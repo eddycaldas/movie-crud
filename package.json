@@ -20,6 +20,7 @@
   "homepage": "https://github.com/eddycaldas/movie-crud#readme",
   "dependencies": {
     "body-parser": "^1.18.0",
+    "cors": "^2.8.4",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "knex": "^0.13.0",
