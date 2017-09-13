@@ -7,7 +7,7 @@ $(document).ready(function() {
     .then(showMovie)
 });
 
-var $eachItems = "#movie-items li";
+// var $eachItems = "#movie-items li";
 var $movieItem;
 
 function showMovie(data) {
@@ -38,13 +38,3 @@ data.forEach(function(items) {
 
 
 
-
-// $.get("https://whispering-lake-29230.herokuapp.com/movie")
-// .then (function(data) {
-//   var array = []
-//   for (var i=0; i < data.length; i++) {
-//    console.log(data[i])
-//      array.push(data[i])
-//   }
-//     console.log(array);
-// })

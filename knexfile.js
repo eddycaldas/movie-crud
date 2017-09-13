@@ -7,7 +7,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/movie-crud',
+    connection: 'postgresql://localhost/movie-crud',
   },
   
   production: {

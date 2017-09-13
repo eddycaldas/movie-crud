@@ -4,17 +4,15 @@ const app = express();
 const cors = require('cors')
 
 app.use(bodyParser.urlencoded({ extended: false }));
- 
 app.use(bodyParser.json());
-
 app.use(express.static('public'))
-
 app.use(cors())
 
 const movie = require('./routes/movie');
-
 app.use(movie);
 
+// const update = require('./routes/movie/:id');
+// app.use(update);
 
 
 
