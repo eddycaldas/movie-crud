@@ -69,3 +69,15 @@ h5 {
  tr {
    text-align: center;
  }
+ 
+ .third-top {
+   background-color: black;
+ }
+ 
+ input {
+   padding-right: 100px;
+ }
+ 
+ label {
+   padding-right: 50px;
+ }

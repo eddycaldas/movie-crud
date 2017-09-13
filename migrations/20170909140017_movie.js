@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.text('director')
     table.integer('year')
     table.integer('rating')
+    table.text('url')
   })
 };
 

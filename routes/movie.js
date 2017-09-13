@@ -5,23 +5,29 @@ const path = require('path');
 
 
 
+
+
+
 router.get('/movie', (req, res) => {
   queries
   .movie
   .getAll()
   .then(movies => {
     res.json(movies);
-  })
+  });
 })
 
-  // router.get('/movie/:id', (req, res) => {
-  //   queries
-  //     .movie
-  //     .getOne(req.param.id)
-  //     .then(movie => {
-  //       res.json(movie);
-  //     });
-  // });
+
+
+
+  router.get('/movie/:id', (req, res) => {
+    queries
+      .movie
+      .getOne(req.params.id)
+      .then(movie => {
+        res.json(movie);
+      });
+  });
 
 router.post('/movie', (req, res) => {
   queries
