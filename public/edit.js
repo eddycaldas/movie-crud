@@ -10,21 +10,22 @@ $(() => {
             $('#year').val(newMovie.year);
             $('#rating').val(newMovie.rating);
             $("#button-update").attr("href", `movies.html?id=${newMovie.id}`)
-            //   })
-            // })
-
             $('#button-update').click((event) => {
                 event.preventDefault();
                 $.ajax({
                     type: 'PUT',
                     dataType: 'json',
                     url: `${movieApi}/${id}`,
-                    data: newMovie,
-
+                    data: {
+                        url: $('#url').val(),
+                        title: $("#title").val(),
+                        director: $('#director').val(),
+                        year: $('#year').val(),
+                        rating: $('#rating').val(),
+                    }
                 }).then(result => {
                     window.location = `movies.html?id=${id}`;
                 })
             })
-
         });
 })
