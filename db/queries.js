@@ -2,7 +2,9 @@ const knex = require('./knex');
 
 module.exports = {
   
-  movie: {    
+  movie: {   
+    
+     
     getAll: function() {
         return knex('movie');
     },
@@ -12,19 +14,19 @@ module.exports = {
     },
     
     create: function(movie) {
-       return knex('movie').insert(movie).returning('*')
+       return knex('movie').insert(movie, 'id').returning('*')
     },
     
     updated: function(id, movie) {
       return knex('movie').where('id', id).update(movie, '*');
-    }
+    },
+    
+    delete(id) {
+      return knex('movie').where('id', id).del();
+    },
+    
     
  }    
 }
 
 
-
-// 
-// function deleteMovie(id) {
-//   return knex('movie').where('id', id).del();
-// }

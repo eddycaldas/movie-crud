@@ -11,14 +11,8 @@ app.use(cors())
 const movie = require('./routes/movie');
 app.use(movie);
 
-// const update = require('./routes/movie/:id');
-// app.use(update);
 
-
-
-
-
-
+//-------------------------------->
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`listening on ${port}`);

@@ -3,12 +3,6 @@ const router = express.Router();
 const queries = require('../db/queries'); //require the queries file
 const path = require('path');
 
-// function isValidId(req, res, next) {
-//   if(!isNaN(req.params.id)) return next();
-//   next(new Error('Invalid ID'))
-// }
-
-
 
 
 router.get('/movie', (req, res) => {
@@ -29,7 +23,7 @@ router.get('/movie', (req, res) => {
       });
   });
 
-router.post('/movie', (req, res) => {
+router.post('/movie/', (req, res) => {
   queries
     .movie
     .create(req.body)
@@ -48,18 +42,21 @@ router.put('/movie/:id', (req, res, next) =>{
 });
 
 
-// 
-// router.delete('/movies/:id', (req, res) => {
-//   queries.deleteMovie(req.params.id).then(() => {
-//     res.json({
-//       deleted: true
-//     });
-//   });
-// });
-// 
+
+router.delete('/movie/:id', (req, res) => {
+queries.movie
+.delete(req.params.id)
+.then (()=> {
+  res.json({
+    deleted: true
+  });
+});
+});
 
 
 
+
+   
 
 
 
