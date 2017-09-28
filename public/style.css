@@ -1,21 +1,35 @@
 body {
-  background-color: #fcede3;
-  font-family: 'Cormorant Garamond', serif;
+  width: 100%;
+  font-family: 'Lateef', cursive;
   font-size: 17px;
+}
+.addNewMovie {
+  background-image: image(image/pic.png);
+}
+a {
+  font-family: 'Lateef', cursive;
+}
+#add-movie-button {
+  font-family: 'Lateef', cursive;
 }
 header {
   background-color: #F68F4A;
 }
 button {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
-  width: 100px;
+  width: 140px;
   height: 40px;
   background-color: #FAC7A5;
   border-radius: 8px;
   border: none;
 }
+.link {
+  text-decoration: none;
+  font-family: 'Lateef', cursive;
+
+}
 h1 {
+  font-family: 'Lateef', cursive;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -28,6 +42,7 @@ img {
 #front-page {
   width: 70%;
   height: 550px;
+  opacity: 0.1;
 }
 footer {
   width: 100%;
@@ -84,4 +99,23 @@ label {
 .panel-footer {
   padding-left: 310px;
 } 
+.holder {
+    max-width: 450px;
+}
+.holder {
+  padding-left: 35%;
+}
+#title1 {
+  padding-right: 74px;
+}
+#year1 {
+  padding-right: 77px;
+}
+#rating {
+    padding-right: 80px;
+}
+#url1 {
+  padding-right: 24px;
+}
+
 

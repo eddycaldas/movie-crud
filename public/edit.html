@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <title></title>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
-   </head>
-   <body>
-      <header id="info">
-         <h1>Movie Rating</h1>
-         <h2>See if your opinions are correct!</h2>
-      </header>
-      <form class="edit-html" action="index4.html" method="post"><br><br>
-         <label for="img"></label>
-         <img id="img"type="text" alt=""><br><br>
-         <label for="title">Title</label>
-         <input id="title"type="text" name="" value=""><br><br>
-         <label for="director">Director</label>
-         <input id="director"type="text" name="" value=""><br><br>
-         <label for="year">Year</label>
-         <input id="year"type="text" name="" value=""><br><br>
-         <label for="rating">My Rating</label>
-         <input id="rating"type="text" name="" value=""><br><br>
-         <label for="url">Poster URL</label>
-         <input id="url"type="text" name="url" value=""><br><br>
-         <button id="button-update"type="button" name="button">Edit Movie</button>
-         <button id="button-update"type="button" name="button">GO To Movies</button>
-      </form>
-      <footer></footer>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
-      <script src="shared.js" charset="utf-8"></script>
-      <script src="edit.js" charset="utf-8"></script>
-   </body>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
+</head>
+
+<body>
+    <header id="info">
+        <h1>Movie Rating</h1>
+        <h2>See if your opinions are correct!</h2>
+    </header>
+    <div class="holder">
+        <form class="edit-html" action="index4.html" method="post"><br><br>
+            <label for="img"></label>
+            <img id="img" type="text" alt=""><br><br>
+            <label id="title1"for="title">Title</label>
+            <input id="title" type="text" name="" value=""><br>
+            <label id="director1"for="director">Director</label>
+            <input id="director" type="text" name="" value=""><br>
+            <label id="year1"for="year">Year</label>
+            <input id="year" type="text" name="" value=""><br>
+            <label id="rating1"for="rating">My Rating</label>
+            <input id="rating" type="text" name="" value=""><br>
+            <label id="url1"for="url">Poster URL</label>
+            <input id="url" type="text" name="url" value=""><br><br>
+            <button id="button-update" type="button" name="button">Edit Movie</button>
+            <button id="button-update" type="button" name="button"><a href="movies.html">GO To Movies</a></button>
+        </form>
+    </div><br>
+    <footer></footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="shared.js" charset="utf-8"></script>
+    <script src="edit.js" charset="utf-8"></script>
+</body>
+
 </html>
